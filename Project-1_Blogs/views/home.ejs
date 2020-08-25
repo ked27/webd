@@ -1,5 +1,78 @@
 <%- include("header"); -%>
+<div class="alert alert-light" role="alert" style="margin-bottom:0px !important">
+  <h2><span class="badge badge-info">Kedits</span></h2>
+</div>
+<div class="alert alert-info" role="alert" style="margin-bottom:0px !important">
+  Code the right way.Visualise Think Code.<br />
+  Have your daily dose 🍴 on whats going on in tech.Latest tech news and insights to new projects.
+</div>
 <div class="alert alert-primary" role="alert">
-  A simple primary alert—check it out!
+  Begin your Learning Journey.
+</div>
+
+<p style="  margin: auto;width: 30%;text-align:center;padding: 10px;margin-bottom:20px;">
+  <a class="btn btn-info" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Register</a>
+  <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Login</button>
+</p>
+<div class="row">
+  <div class="col" style="margin-left:200px;padding: 10px;">
+    <div class="collapse multi-collapse" id="multiCollapseExample1">
+      <div class="card card-body" style="width:70%;">
+        <form>
+          <div class="form-row">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="First name">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Last name">
+            </div>
+          </div>
+          <div class="form-inline" style="margin-top:17px;">
+            <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+              <option selected>Gender</option>
+              <option value="1">Male</option>
+              <option value="2">Female</option>
+              <option value="3">Custom</option>
+            </select>
+              <input style="margin-left:50px;width:250px;" type="number" class="form-control" placeholder="Mobile-Number">
+          </div>
+          <div class="form-group" style="margin-top:17px;">
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email address">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            <small id="emailHelp" class="form-text text-muted">We'll never know your password.</small>
+          </div>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Interests</span>
+            </div>
+            <textarea class="form-control" aria-label="With textarea"></textarea>
+          </div>
+          <button style="margin-top:15px;" type="submit" class="btn btn-info">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="col" style="  margin-left:50px;padding: 10px;">
+    <div class="collapse multi-collapse" id="multiCollapseExample2">
+      <div class="card card-body" style="width: 70%;">
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+            <small id="emailHelp" class="form-text text-muted">We'll never know your password.</small>
+          </div>
+          <button type="submit" class="btn btn-info">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
 </div>
 <%- include("footer"); -%>
