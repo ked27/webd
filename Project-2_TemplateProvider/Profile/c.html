@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css">
+    <title>Teachings</title>
+  </head>
+  <body>
+       <div id="box">
+          <div class="container" onclick="myFunction(this)">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+            </div>
+           <div id="navbar">
+               <ul>
+                   <li><a href="./index.html">HOME</a></li>
+                   <li><a href="./r.html">RESEARCH OVERVIEW</a></li>
+                   <li><a href="./t.html">TEACHINGS</a></li>
+                   <li><a href="./c.html">CV</a></li>
+                   <li><a href="./s.html">RESOURCES AND ME</a></li>
+                </ul>
+            </div>
+            <h2 style="margin-top: 50px;text-align:center;margin-bottom: 30px;color:gray;">Curriculum Vitae</h2>
+        <div id="tea">  
+            <div id="card">
+                    <div id="card-head">
+                         <p>Education</p>
+                    </div>
+                    <div id="body">
+                        <ul>
+                          <li>PhD, Computer Science</li>
+                          <li>M. Tech, Computer Science,</li>
+                          <li>BE, Computer Science and Engineering, </li>
+                        </ul>
+                     </div>
+                    </div>
+               
+                <div id="card">
+                     <div id="card-head">
+                          <p>Teaching Experience</p>
+                      </div>
+                      <div id="body">
+                         <ul>
+                         <li> Assistant Professor, Department of Computer Science and Engineering, International Institute of Information Technology, Bhubaneswar (August, 2012 - till now) </li>
+                       </ul>
+                    </div>
+                </div>
+                <div id="card">
+                        <div id="card-head">
+                             <p>Administrative Responsibilities</p>
+                        </div>
+                        <div id="body">
+                            <ul>
+                              <li>As the coordinator for IT Services, IIIT Bhubaneswar from July, 2013 to July, 2014.</li>
+                              <li>As a member of technical evaluation committee during the HPC set up at IIIT Bhubaneswar.</li>
+                              <li>I was the co-convenor of Workshop on Image and Video Processing (WIVP-2014) held at IIIT Bhubaneswar.</li>
+                            </ul>
+                         </div>
+                </div>
+                <div style="background-color: white; height: 15%;">
+                        <p></p>
+                        <br />
+                        <br />
+                </div>
+            </div>
+        </div>
+        <script>
+            function myFunction(x) {
+              x.classList.toggle("change");
+              var y = document.getElementById("navbar");
+
+              if (y.style.display == "block") {
+               y.style.display = "none";
+              } 
+              else {
+                y.style.display = "block";
+                y.style.height="auto";
+              }
+            }
+        </script>
+     </body>
+     </html>   

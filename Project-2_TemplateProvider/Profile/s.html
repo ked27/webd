@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css">
+    <style>
+      a{
+        float:none !important;
+      }
+      first{
+        border-bottom: 1px solid black;
+      }
+      h4,h6{
+        margin-top: 8px;
+        margin-left: 30px;
+        margin-bottom: 1px;
+      }
+    </style>
+    <title>Teachings</title>
+  </head>
+  <body>
+       <div id="box">
+          <div class="container" onclick="myFunction(this)">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+            </div>
+           <div id="navbar">
+               <ul>
+                   <li><a href="./index.html">HOME</a></li>
+                   <li><a href="./r.html">RESEARCH OVERVIEW</a></li>
+                   <li><a href="./t.html">TEACHINGS</a></li>
+                   <li><a href="./c.html">CV</a></li>
+                   <li><a href="./s.html">RESOURCES AND ME</a></li>
+                </ul>
+            </div>
+            <div id="tea">
+                <div id="card">
+                    <div id="card-head">
+                         <p>Resources</p>
+                    </div>
+                    <div id="body">
+                        <p>Academics<p>
+                        <ul  style="border-bottom:1px solid black;">
+                          <li>Theoretical Computer Science Cheat Sheet <a href="#">(pdf)</a> </li>
+                          <li > OpenCV Cheat Sheet <a href="#">(pdf)</a>  </li>
+                          <li style="margin-bottom: 15px;"> Linear Algebra<a href="#">(pdf)</a></li>
+                        </ul>
+                        <p >Some Essential Stuffs</p>
+                        <h4>Computing</h4>
+                        <ul> 
+                          <li>GCC intro  <a href="#">(Link)</a> </li>
+                          <li>X-Code  <a href="#">(pdf)</a> </li>
+                        </ul>
+                        <h4>Editing</h4>
+                        <h6>LaTeX Symbols</h6>
+                        <ul style="border-bottom:1px solid black"> 
+                          <li>Simple Symbols </li>
+                          <li style="margin-bottom: 15px;">Complete Symbols</li>
+                        </ul>
+                        <p>Humours</p>
+                        <ul style="display:inline-block !important;"> 
+                          <li><a href="#">Phd Comics</a> <i style="color:hotpink;">||</i> <a href="#">User-Friendly</a></li>
+                        </ul>
+                     </div>
+                    </div>
+                </div>
+                <div id="card">
+                     <div id="card-head">
+                          <p>Some of My Favourite Reading List</p>
+                      </div>
+                      <div id="body">
+                        <p>Autobiography of a Yogi (Completed)<p>
+                         <ul>
+                         <li>Author: Paramahansa Yogananda</li>
+                        </ul>
+                        <p>Living with the Himalayan Masters (Completed)</p>
+                        <ul>
+                          <li>Author: Swami Rama</li>
+                        </ul>
+                        <p>Alan Turing (Completed)</p>
+                        <ul>
+                            <li>Author: Andrew Hodges</li>
+                        </ul>
+                        <p>The Golden Ticket: P, NP, and The Search for The Impossible(Completed)</p>
+                        <ul> 
+                        <li>Author: Lance Fortnow</li>
+                        </ul>
+                        <p>Simply Complexity (Completed<p>
+                          <ul>
+                          <li>Author: Neil Johnson</li>
+                        </ul>
+                        <p>Surely You're Joking Mr. Feynman: Adventures of a curious character(Completed)</p>
+                        <ul>
+                           <li>Link: [<a href="#">Amazon</a>]</li>
+                           <li>Author: Richard P. Feynman</li>
+                        </ul>
+                    </div>
+                </div>
+                <div style="background-color: white; height: 15%;">
+                  <p></p>
+                  <br />
+                  <br />
+          </div>
+            </div>
+        </div>
+        <script>
+            function myFunction(x) {
+              x.classList.toggle("change");
+              var y = document.getElementById("navbar");
+
+              if (y.style.display == "block") {
+               y.style.display = "none";
+              } 
+              else {
+                y.style.display = "block";
+                y.style.height="auto";
+              }
+            }
+        </script>
+     </body>
+     </html>   
