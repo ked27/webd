@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Weight Converter</title>
+  </head>
+<!-- Changing Background color -->
+  <body class="bg-dark"> 
+      <!-- Centering content and applying margin-top -->
+      <div class="container"> 
+          <!-- Creating a row div -->
+          <div class="row">
+              <!-- Creating a column div of medium with size half of screen -->
+              <div class="col-sm-6 mt-5 offset-md-3">
+                  <!-- Changing color to white,center text and display -->
+                  <h1 class="text-white text-center display-4 mb-3">Weight Converter</h1>
+                  <!-- User input in numbers -->
+                  <input type="number" id="input" class="form-control form-control-lg mb-4 "  placeholder="Enter wt. in pounds"> 
+                  <!-- Creating div for output -->
+                  <div id="output">
+                  <!-- Creating card_1 for output -->
+                  <div class="card bg-primary mb-2">
+                  <div class="card-body">
+                      <h4 class="card-title text-white">Grams:</h4>
+                      <div id="grams-Output"></div>
+                  </div>
+                  </div>
+                  <!-- Creating card_2 for output -->
+                  <div class="card bg-success mb-2">
+                  <div class="card-body ">
+                      <h4 class="card-title">Kilo Grams:</h4>
+                      <div id="kilograms-output"></div>
+                  </div>
+                  </div>
+                  <!-- Creating card_3 for output -->
+                  <div class="card bg-danger mb-2">
+                  <div class="card-body">
+                      <h4 class="card-title">Ounces:</h4>
+                      <div id="ounces-output"></div>
+                  </div> 
+                  </div>
+               </div>
+             </div>   
+          </div>
+        </div> 
+    <script> 
+    <!-- hiding output section  -->
+    document.getElementById('output').style.visibility="hidden";
+    <!--  when the user types  -->
+    document.getElementById('input').addEventListener('input',function(e){
+      <!-- displaying output section  -->
+      document.getElementById('output').style.visibility="visible";
+      <!-- calculating weights in all 3 systems  -->
+      document.getElementById('grams-Output').innerHTML=e.target.value/0.0022046;
+      document.getElementById('kilograms-output').innerHTML=e.target.value/2.2046;
+      document.getElementById('ounces-output').innerHTML=e.target.value*16;
+    });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
