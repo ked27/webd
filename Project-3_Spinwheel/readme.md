@@ -3,4 +3,5 @@ Wheel is running on port 3000 <br />
 #SpinAndWinChallenge <br />
 #phaser3 <br />
 #xboxgamebar <br />
-https://www.linkedin.com/posts/naman-kedia-755557139_codingblocks-spinandwinchallenge-phaser3-activity-6676424910002384896-Mds4
+https://ked27.github.io/Webd/Project-3_Spinwheel/public/index.html
+
