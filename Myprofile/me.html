@@ -1,44 +1,278 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title></title>
-    <link rel="stylesheet" type="text/css" href="profile.css" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Cardo&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div class="bg">
-      <nav>
-        <div class="nav-wrapper">
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Achievements</a></li>
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <title>Hello, world!</title>
+  <style>
+    /* Navigation Bar */
+     body{text-align: center !important;margin: auto !important;}
+    .colored-section {color: #ef8172;}
+    .colored-section:hover {color: #ff4c68;}
+    .big-heading {font-family: cursive;font-size: 3.5rem;line-height: 1.5;}
+    .icon {color: #ef8172;margin-bottom: 1rem;}
+    .icon:hover {color: #ff4c68;}
+    .navbar-brand {font-size: 2.5rem;font-weight: bold;}
+    .nav-link {font-size: 1.2rem;}
+    img{width: 270px;height: 270px;border-radius: 5%;margin:15% 0%;}
+    .feature-title {font-size: 1.5rem;}
+    .exp-image {margin: 0px 0px 30px 0px !important;height: 100px;width: 80px;line-height: 1.5;}
+    .section-heading {font-size: 3rem;line-height: 1.5;}
+    #achievements{color: #ef8172;text-align: center;}
+    .testimonial-text {color: #ef8172;font-size: 2rem;}
+    .testimonial-text:hover {color: #ff4c68;}
+    .carousel-control-next-icon:after {content: '>';font-size: 30px;color: #ff4c68; }
+    .carousel-control-prev-icon:after {content: '<';font-size: 30px;color: #ff4c68;}
+    .carousel-inner {height: 250px;}
+    .white-section{margin: auto !important;}
+    .connect{margin:auto;width: 20%;}
+    .container-fluid {  padding: 5% 15%;}
+    #achievements {
+          margin: 100px 0px 100px 0px;
+        }
+    @media (min-width: 1028px) {
+    .navbar {color: black;padding: 0 0 4.5rem;margin-left: 100px;}
+
+    .nav-item {
+      padding: 0 18px;
+    }
+    img {
+      margin:0px !important;
+      margin-left: 150px;
+      }
+      .feature-box {
+      padding: 4.5%;
+    }
+    #experience {
+      padding: 60px 100px;
+    }
+
+    .pricing-column {
+      padding: 2%;
+    }
+
+    #achievements {
+      margin: 0px 20px 60px 0px;
+    }
+
+    .social-icon {
+      margin: 20px 10px;
+    }
+   .first_nav{
+    margin-left: 100px;
+   }
+
+  </style>
+</head>
+
+<body>
+
+
+  <section class="colored-section" id="home">
+    <div class="container-fluid">
+      <!-- Building Nav Bar -->
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">Hi!🙌</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active first_nav">
+              <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#aboutme">Me!</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#achievements">Achievement</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#project">Projects</a>
+            </li>
           </ul>
         </div>
       </nav>
 
-      <div class="profile">
-        <div class="profileText">
-          <h2>Naman Kedia</h2>
-          <h3>Bhubaneswar , Odisha</h3>
-          <p>WEB DEVELOPER | AR BEGINNER</p>
+      <!-- Home -->
+
+      <div class="row">
+
+        <div class="col-lg-6">
+          <h1 class="big-heading">Naman Kedia <br /> </h1>
+          <br />
+          <br />
+          <h4>Software Engineer 1 - IT Dell <br />Hyderabad, India</h4>
         </div>
-        <div class="fonts">
-          <a href=""><i class="fa fa-facebook-square fa-2x"></i> </a>
-          <a href=""><i class="fa fa-linkedin-square fa-2x"></i></a>
-          <a href=""><i class="fa fa-instagram fa-2x"></i></a>
-          <a href=""><i class="fa fa-google-plus-square fa-2x"></i> </a>
+
+        <div class="col-lg-6">
+          <img class="title-image" src="1.jpeg" alt="iphone-mockup">
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+  <section class="white-section" id="aboutme">
+
+    <div class="container-fluid">
+
+      <div class="row">
+        <div class="feature-box col-lg-4">
+          <i class="icon fas fa-code fa-4x"></i>
+          <h3 class="feature-title">Java Programmer</h3>
+          <p>Enjoy writing code and learning new tech</p>
+        </div>
+
+        <div class="feature-box col-lg-4">
+          <i class="icon fas fa-coffee fa-4x"></i>
+          <h3 class="feature-title">Developer</h3>
+          <p>Love to write , think and build to the best i can.</p>
+        </div>
+
+        <div class="feature-box col-lg-4">
+          <i class="icon fa fa-play fa-4x"></i>
+          <h3 class="feature-title">Hobbies</h3>
+          <p>Watching movies,tv-series and playing basketball</p>
         </div>
       </div>
+
+
     </div>
-  </body>
+  </section>
+  <!-- Experience -->
+
+  <section class="white-section" id="experience">
+
+    <h2 class="section-heading">Experience</h2>
+    <p>2 years working as a freelancer in my college.Contibuted to many startups as writer and developer.</p>
+
+    <div class="row">
+
+      <div class="pricing-column col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h3>Software Engineer-1 IT</h3>
+          </div>
+          <div class="card-body">
+            <img class="exp-image" src="favicon.png" alt="iphone-mockup">
+            <p>Software Engineer Summer Intern</p>
+            <p>Software Engineer Winter Intern</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="pricing-column col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h3>Web Developer</h3>
+          </div>
+          <div class="card-body">
+            <img class="exp-image" src="favicon3.png" alt="iphone-mockup">
+            <p>Developed content and website</p>
+            <p>Created front end pages using Bootstrap|JS</p>
+            <button class="btn btn-lg btn-block btn-light" type="button" onclick="location.href='https://ked27.github.io/Webd/TemplateProvider/builder.html'">My-Templates</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="pricing-column col-lg-4">
+        <div class="card">
+          <div class="card-header">
+            <h3>Technical Content Writer</h3>
+          </div>
+          <div class="card-body">
+            <img class="exp-image" src="favicon2.png" alt="iphone-mockup">
+            <p>Wrote codes and articles</p>
+            <p>Published online on GFG Portal</p>
+            <button class="btn btn-lg btn-inline btn-light" type="button" onclick="location.href='https://auth.geeksforgeeks.org/user/namanked/articles'">My-Articles</button>
+            <button class="btn btn-lg btn-inline btn-light" type="button" onclick="location.href='https://auth.geeksforgeeks.org/user/namanked/profile '">GFG Profile</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonials -->
+
+    </div>
+
+  </section>
+
+  <section class="colored-section" id="achievements">
+
+    <div id="testimonial-carousel" class="carousel slide" data-ride="false">
+      <div class="carousel-inner">
+        <div class="carousel-item active container-fluid">
+          <h2 class="testimonial-text">First Runner up of Dell Healthakon.</h2>
+        </div>
+        <div class="carousel-item container-fluid">
+          <h2 class="testimonial-text">Academic Topper 2nd year of my College.<br />Scholarship of 20k.</h2>
+        </div>
+        <div class="carousel-item container-fluid">
+          <h2 class="testimonial-text">Presented Buiness model of Project in Dell Jugadothon and got funded.</h2>
+        </div>
+        <div class="carousel-item container-fluid">
+          <h2 class="testimonial-text">Winner of Genhax 2k18 Hackathon.<br />Won 20k prize money.</h2>
+        </div>
+        <div class="carousel-item container-fluid">
+          <h2 class="testimonial-text">Cracked CCDSAP codechef coding Foundation level.<a class="nav-link icon" style="text-decoration: none;" href="https://www.codechef.com/users/mvpked">Codechef Profile</a></h2>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </a>
+      <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </a>
+    </div>
+
+  </section>
+
+  <section class="colored-section" id="project">
+
+    <div class="container-fluid">
+
+      <h3 class="big-heading">Webd</h3>
+      <h5 class="big-heading"> Created different Web portals</h5>
+      <h3>Blogs  <br/>
+       TemplateProvider </br/>   UITesting </br/>  SpinWheel</h5>
+        <br  />
+
+      <button class="download-button btn btn-lg btn-light" type="button" onclick="location.href='https://github.com/ked27'"><i class="icon fab fa-github" style="margin:0px 10px !important;"></i>Github</button>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+
+  <footer class="white-section" id="footer">
+    <div class="container-fluid">
+      <div class="row connect" >
+        <a class="nav-link" style="text-decoration: none;" href="https://www.facebook.com/mvpked"><i class="social-icon icon fab fa-facebook-f"></i></a>
+        <a class="nav-link" style="text-decoration: none;" href="https://twitter.com/kediaaaa"><i class="social-icon icon fab fa-twitter"></i></a>
+        <a class="nav-link" style="text-decoration: none;" href="mailto:nkedia1234@gmail.com"><i class="social-icon icon fas fa-envelope"></i></a>
+      </div>
+      <p>That's me 👩‍💻</p>
+    </div>
+  </footer>
+
+
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+
 </html>
